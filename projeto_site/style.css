@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+}
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background: lightblue;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    color: white;
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('imagens/header-image.jpg');
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+header nav p {
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 70px;
+    color: white;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+.pacotes {
+    background: rgb(225, 227, 230);
+    padding: 15px;
+}
+
+.pacotes .pacotes-cards{
+    display: flex; /*todas alinhadas lado a lado*/
+}
+
+.pacotes .pacotes-title {
+    width: 100%;
+    text-align: center; 
+    margin: auto;   
+    font-weight: bold;
+}
+
+.pacotes .card {
+    width: 300px; /*largura*/
+    height: 400px; /*altura*/
+    background: white;
+    border-radius: 24px 0px;
+    margin: 25px auto;
+    position: relative;
+}
+
+.pacotes .card-image {
+    width: 300px;
+    height: 200px; /*ALTURA IMAGEM*/
+    border-radius: 24px 0 0 0;
+}
+
+.pacotes .card-content {
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pacotes .card-content ul {
+    display: flex; /* quero um lado do outro*/
+    flex-direction:column; /* em forma de coluna*/
+    list-style: none;
+    padding-left: 0;
+}
+
+.pacotes .card-content ul li {
+    font-size: 0.6rem; /*tamanho da fonte do li*/
+    display: flex; /* vai deixar um do lado do outro*/
+    align-itens:center; /*alinhamento vertical*/
+    margin: 3px 0;
+    color:rgb(7, 4, 0);
+    font-weight: bold;
+}
+
+.pacotes .card-content li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.pacotes .card-content h1{
+    font-size: 1rem;/*tamanho da fonte*/
+   
+}
+
+.servicos {
+    padding: 15px;
+}
+
+.servicos .servicos-title {
+    text-align: center;
+    margin: 45px 0;
+}
+
+.servicos .servicos-cards {
+    margin-top: 20px;
+   display: flex;
+   max-width: 950px;
+   justify-content: center;
+   margin: auto;
+   flex-wrap: wrap;
+
+
+}
+
+.servicos .card {
+width: 250px;
+display: flex;
+flex-direction: column;
+justify-content: center; /*alinhamento vertical*/
+align-items: center; /*alinhamento horizontal*/
+margin: 0 20px;
+}
+
+.servicos .card svg {
+    width: 60px;
+    height: 60px;
+    margin: 50px 0;
+    transition: all 1s;
+}
+
+.servicos .card svg:hover {
+stroke: lightblue;
+transform: scale(1.1);
+
+}
+
+.servicos .card h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.servicos .card p {
+    color: grey;
+    font-size: .8rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.servicos .card .card-content {
+    height: 180px;
+    text-align: center;
+
+}
+
+.servicos button {
+    background: lightblue;
+}
+
+.contato {
+    padding: 3em 0;
+    background:  lightgray;
+    display: center;
+    margin: 0 auto;
+}
+
+.contato .contato-card {
+    margin-bottom: 20px;
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background: white;
+
+}
+
+.copyright {
+    color: black;
+    font-size: 13px;
+    margin: 20px 0 0;
+    
+}
+
+
+
+
+
+/* RESPONSIVIDADE */
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    header nav ul {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
